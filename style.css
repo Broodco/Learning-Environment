@@ -1,0 +1,33 @@
+body {
+    height : 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background:-moz-linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+section.centered{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: justify;
+    padding :40px;
+    border-style: solid;
+    border-width: 2px;
+    height: 100%;
+    width: 60%;
+    background-color:white;
+    float:center;
+}
+ul.checkbox{
+    list-style-type:"\2610";
+    list-style-position: outside;
+}
+p.left {
+    text-align: left;
+ }
+ p.right {
+    text-align: right;
+ }
+ p.center {
+    text-align: center;
+ }
