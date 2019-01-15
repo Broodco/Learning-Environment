@@ -1,0 +1,18 @@
+body{
+    height: auto;
+}
+section.mainbox{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+article.header{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -20%);
+}
+article.text{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, 20%);
+}
