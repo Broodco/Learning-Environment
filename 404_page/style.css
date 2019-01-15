@@ -3,10 +3,11 @@ body{
     height: 100%;
     width:100vh;
     font-family: Arial, Helvetica, sans-serif;
+    background-image:url("brickwall.jpg")
 }
 section.mainbox{
     height:500px;
-    width:700px;
+    width:100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -15,21 +16,47 @@ section.mainbox{
 article.header{
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 0%;
     transform: translate(-50%, 0%);
     text-align:center;
-    white-space:nowrap;
     font-family: 'Cabin', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight:bold;
 }
 article.text{
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 50%;
     transform: translate(-50%, 0%);
     text-align:center;
     font-family: 'Raleway', sans-serif;
     font-style:italic;
-
+}
+section.button{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,0%);
+    height:100px;
+    width:200px;
+    background:rgba(0,0,0,0.7);
+    border-style:solid;
+    border-width:3px;
+    border-color:black;
+    opacity:0.7;
+    border-radius:15px;
+}
+article.textbutton{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    vertical-align:middle;
+    text-align:center;
+    font-family: 'Cabin', sans-serif;
+    color:white;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing:2px;
 }
