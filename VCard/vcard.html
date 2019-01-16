@@ -10,32 +10,34 @@
 
 <body>
     <aside>
-        <!-- .......................................Encadré de gauche avec photo............................................... -->
+        <!-- ..Encadré de gauche avec photo.. -->
         <section id="basicinfo">
             <div id="pic">
                 <img src="tete.jpeg" alt="Photo de profil">
             </div>
             <div id="name_prof">
                 <p id="name">Maxime Broodcoorens</p>
-                <p id="prof">Learner Web Developper</p>
+                <p id="prof">Learner in Web Development</p>
             </div>
         </section>
         <nav class="socmedia">
-            <!-- ...................................Icones réseaux sociaux..................................................... -->
-            <a href=""><img src="icon_facebook.png"></a>
-            <a href=""><img src="icon_gmail.png"></a>
-            <a href=""><img src="icon_linkedin.png"></a>
-            <a href=""><img src="icon_github.png"></a>
-            <a href=""><img src="icon_twitter.png"></a>
+            <!-- ..Icones réseaux sociaux.. -->
+            <a href="https://www.facebook.com/M.Brotco"><img src="icon_facebook.png"></a>
+            <a href="mailto:broodcoorens.maxime@gmail.com"><img src="icon_gmail.png"></a>
+            <a href="https://linkedin.com/in/broodco"><img src="icon_linkedin.png"></a>
+            <a href="https://github.com/Broodco"><img src="icon_github.png"></a>
+            <a href="https://twitter.com/MaximeBroodcoo1"><img src="icon_twitter.png"></a>
         </nav>
     </aside>
     <main>
-        <!-- .......................................Partie About Me............................................................ -->
-        <section class="simplecolumn">
+        <!-- ..Partie About Me.. -->
+        <article class="art_main" id="aboutme">
             <h2 class="title">About Me</h2>
-            <p id="description"></p>
-        </section>
-        <section class="doublecolumn">
+            <p id="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </article>
+        <!-- ..Partie Infos.. -->
+        <article class="art_main">
             <div class="columnleft">
                 <h2 class="title">Informations</h2>
                 <div class="info_type">
@@ -43,37 +45,36 @@
                     <p>Location</p>
                     <p>Birthdate</p>
                     <p>Birthplace</p>
+                    <p>E-Mail</p>
                 </div>
                 <div class="info_answer">
                     <p>Maxime Broodcoorens</p>
                     <p>Saint-Gilles, Belgium</p>
                     <p>29/07/1994</p>
                     <p>Charleroi, Belgium</p>
+                    <p>broodcoorens.maxime@gmail.com</p>
                 </div>
             </div>
+        <!-- ..Partie Langues.. -->
             <div class="columnright">
                 <h2 class="title">Languages</h2>
                 <div class="lang">
-                    <p>
-                        <span class="langname">French</span><br/>
-                        <img src="" class="prog"> Native
-                    </p>
-                <div class="lang">
-                    <p>
-                        <span class="langname">Eglish</span><br/>
-                        <img src="" class="prog"> Good
-                    </p>
-                <div class="lang">
-                    <p>
-                        <span class="langname">Dutch</span><br/>
-                        <img src="" class="prog"> Basic
-                    </p>
+                    <span class="langname">French</span><br/>
+                    <div class="prog" id="fr"></div> <span class="level">Native</span>
                 </div>
-            </div>
-        </section>
-        <section class="simplecolumn">
+                <div class="lang">
+                    <span class="langname">English</span><br/>
+                    <div class="prog" id="en"></div> <span class="level">Fluent</span>
+                </div>
+                <div class="lang">
+                    <span class="langname">Dutch</span><br/>
+                    <div class="prog" id="du"></div> <span class="level">Basic</span>
+                </div>
+        </article>
+        <!-- ..Partie Skills.. -->
+        <article class="art_main" id="skills">
             <h2 class="title">My Skills</h2>
-        </section>
+        </article>
     </main>
 </body>
 </html>
