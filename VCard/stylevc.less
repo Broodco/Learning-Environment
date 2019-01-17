@@ -10,6 +10,7 @@ body{
     margin:none;
     display:flex;
     padding-right:10px;
+    font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* ..Mise en page contenu aside.. */
 aside{
@@ -45,13 +46,13 @@ aside{
     text-align:center;
 }
 #name{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight:bold;
     margin-bottom:10px;
 }
 #prof{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:18px;
     margin-top:0px;
 }
@@ -86,14 +87,14 @@ main{
 }
 #description{
     padding-left:20px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:18px;
 }
 .title{
     margin-top:0px;
     padding-left:20px;
     font-size:30px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .columnleft{
     float:left;
@@ -131,7 +132,7 @@ main{
 .langname{
     margin-bottom:5px;
     font-size:18px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style:italic;
 
 }
@@ -208,6 +209,10 @@ main{
     padding:6px;
     padding-left:10px;
 }
+.circles_text{
+    display: flex;
+    justify-content: space-around;
+}
 .radial-progress {
 	@circle-size: 120px;
 	@circle-background: #d6dadc;
@@ -281,10 +286,10 @@ main{
 				}
 			}
 		}
-	}
-	@i: 25;
+    }
+	@i: 0;
 	@increment: 180deg / 100;
-	.loop (@i) when (@i <= 100) {
+	.loop (@i) when (@i <= 72) {
 		&[data-progress="@{i}"] {
 			.circle {
 				.mask.full, .fill {
