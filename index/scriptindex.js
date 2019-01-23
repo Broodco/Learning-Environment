@@ -1,7 +1,10 @@
 /* This script is used to create a drop down button in the header part of the page */
 
-function showdropdown(){
-    document.getElementById("myDropdown").classList.toggle("show");
+function showdropdowna(){
+    document.getElementById("myDropdown-exos").classList.toggle("show");
+}
+function showdropdownb(){
+    document.getElementById("myDropdown-contact").classList.toggle("show");
 }
 window.onclick = function(event){
     if (!event.target.matches('.dropdown')){
