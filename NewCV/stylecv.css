@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin|Raleway:300i');
 
+
 *{
-    margin : 0;
-    padding : 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    font-family: 'Cabin', sans-serif;
+    font-family:'Cabin', sans-serif;
 }
 :root{
     --color-1: rgb(247, 249, 254);
@@ -15,12 +16,15 @@
     --color-6: rgb(55, 86, 97);
 }
 body{
-    background: content-box var(--color-1);
-    display:flex;
-    flex-direction: column;
-    align-items: stretch;
-    color: var(--color-6);
+    height: 100vh;
+    width: 100%;
+    display:grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 2fr 200px 320px 2fr;
+    background-color : var(--color-1);
+    color : var(--color-6);
 }
+/* HEADER */
 .layer{
     background-image:url("blue_noise.png");
     mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
@@ -63,48 +67,6 @@ body{
     box-shadow: inset 0px 0px 10px 13px var(--color-4);
     cursor: pointer;
 }
-main{
-    margin-top: 100px;
-    height:90%;
-    width: 62.5%;
-    align-self:center;
-    display: flex;
-    flex-direction: column;
-}
-#logo{
-    padding: 1rem;
-    margin: 1rem;
-    margin-top:4rem;
-    max-width:20%;
-    align-self: center;
-}
-#imglogo{
-    max-height:100%;
-    max-width: 100%;
-}
-#welc_msg{
-    height:auto;;
-    text-align:center;
-    margin-top: 0;
-}
-h1{
-    margin: 0;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-}
-h3{
-    margin: 0.5rem;
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-}
-#tete{
-    max-width:50%;
-    border: 1px solid var(--color-5);
-}
-
-/* -----Drop Down Button ----- */
-
 .dropdown-content{
     display : none;
     position: relative;
@@ -123,7 +85,6 @@ h3{
     display: block;
     border: 1px solid var(--color-5);
 }
-
 .dropdown-content a:hover {
     -webkit-box-shadow: inset 0px 0px 10px 13px var(--color-4);
     -moz-box-shadow: inset 0px 0px 10px 13px var(--color-4);
@@ -131,4 +92,11 @@ h3{
 }
 .show{
     display:block;
+}
+
+/* ASIDE */
+
+aside{
+    grid-row:2 / span 1;
+    grid-column: 2 / span 1;
 }

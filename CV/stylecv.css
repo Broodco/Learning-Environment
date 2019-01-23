@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin|Raleway:300i');
 body{
-    background:-moz-linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
-    background:-webkit-linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
-    background:-o-linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
-    background:-ms linear-gradient(120deg,#B2905A,#FFE2B4,#FFD79B,#618EB2,#A2D5FF);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-color: rgb(247, 249, 254);
 }
 .toppage{
     width:800px;
@@ -15,10 +9,11 @@ body{
     height:50px;
     padding:20px;
     border-style:solid;
-    background-color:white;
+    background-color:rgb(55, 86, 97);
 }
 h1{
     position:relative;
+    padding:0.1em;
     text-align:center;
     font-family: 'Cabin', sans-serif;
     font-size:40px;
