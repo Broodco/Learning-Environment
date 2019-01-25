@@ -28,7 +28,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     color : var(--color-6);
-    overflow: hidden;
+    overflow: auto;
 }
 /* TEXT STYLING */
  a{
@@ -159,9 +159,6 @@ aside{
 .pic{
     border: 1px solid var(--color-2);
     border-radius: 10%;
-}
-.basicInfos{
-
 }
 .longstring{
     font-size: 0.9em;
