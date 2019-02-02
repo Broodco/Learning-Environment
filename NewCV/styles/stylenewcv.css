@@ -216,7 +216,7 @@ main-part2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding : 10%;
+    padding : 5% 10%;
     margin-left: 1rem;
     background: var(--color-2);
 }
@@ -238,6 +238,12 @@ main-part2{
     align-self: flex-end;
 }
 @media only screen and (min-width:671px) AND (max-width:920px){
+    body{
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+        overflow-y:scroll;
+    }
     .horiz li{
         height:60px;
         width : 150px;
@@ -248,8 +254,20 @@ main-part2{
         -moz-box-shadow: inset 0px 0px 10px 13px var(--color-4);
         box-shadow: inset 0px 0px 10px 13px var(--color-4);
     }
+    main-part-1 main-part-2{
+        justify-content: space-between;
+        padding-top : 0;
+        padding-bottom : 0;
+        
+    }
 }
 @media only screen and (max-width:670px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        overflow-y:scroll;
+    }
     .fixe{
         justify-content: flex-start;
         height:80px;
@@ -306,5 +324,10 @@ main-part2{
         -moz-box-shadow: inset 0px 0px 10px 13px var(--color-4);
         box-shadow: inset 0px 0px 10px 13px var(--color-4);
         
+    }    
+    main-part-1 main-part-2{
+        justify-content: space-between;
+        padding-top : 0;
+        padding-bottom : 0;
     }
 }

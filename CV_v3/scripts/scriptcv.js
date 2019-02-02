@@ -18,6 +18,9 @@ window.onclick = function(event){
         }
     }
 }
+
+// Script used for the Burger Menu 
+
 function showBurgerMenu(){ 
     var menu = document.getElementById("responsive");
     if (menu.style.display == "block"){
