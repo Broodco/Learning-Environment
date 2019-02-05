@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+  <script>
+    window.onload = () => {
+      document.addEventListener("keypress", showkey)
+    }
+    function showkey(e){
+      var key = e.which || e.keyCode || 0;
+      console.log(key)
+      alert(String.fromCharCode(key));
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>

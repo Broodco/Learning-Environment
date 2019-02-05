@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5</title>
+    <script src="script.js"></script>
+    <script>
+      window.onload = () => {
+        let allimg_unstable = document.querySelectorAll(".conteneur img");
+        var allimg = Array.from(allimg_unstable);
+        for (let i = 0 ; i < allimg.length ; i++){
+          allimg[i].addEventListener("mouseover",function(){ChSrcIn(i)});
+          allimg[i].addEventListener("mouseout",function(){ChSrcOut(i)});
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="images/image1.jpg" id="image1"/>
+      <img src="images/image2.jpg" id="image2"/>
+      <img src="images/image3.jpg" id="image3"/>
+      <img src="images/image4.jpg" id="image4"/>
+      <img src="images/image5.jpg" id="image5"/>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercices_5-6</title>
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+        <script>
+            window.onload = () => {
+                document.querySelector("#div").addEventListener("click",divis);
+                document.querySelector("#mult").addEventListener("click",multip);
+            }
+        </script>
+    </head>
+    <body>
+        <form id="op_math"> 
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button  id="mult" name ="mult">Multiplier</button>
+            <button id="div" name="div">Division</button>
+        </form>
+    </body>
+</html>

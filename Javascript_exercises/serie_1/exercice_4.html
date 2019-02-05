@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_4</title>
+        <meta charset="UTF-8">
+        <title>Learning JS - Exercice 4</title>
+    </head>
+    <body>
+        <form id="form">
+            <label for="nom">Nom : </label><input type="text" name="nom" id="nom"/>
+            <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+            <label for="ville">Ville : </label><input type="text" name="ville" id="ville"/>
+            <button onclick="submitfct();" name="valider" id="valider" >Valider</button>
+        </form>
+        <script>
+            function submitfct(){
+                var nom = document.querySelector('#nom').value;
+                var prenom = document.querySelector('#prenom').value;
+                var ville = document.querySelector('#ville').value;
+                alert(
+                    "Nom : "+nom+"\n"+
+                    "Prénom : " + prenom+"\n"+
+                    "Ville : "+ville);
+            }   
+        </script>
+    </body>
+</html>

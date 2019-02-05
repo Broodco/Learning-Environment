@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+  <script>
+    window.onload = () => {
+      document.querySelector("button").addEventListener("click",erase)
+    }
+    function match() {
+      var matches = document.querySelectorAll("input")
+      return matches
+    }
+    function eraseOne(element) {
+      element.value="";
+    }
+    function erase(){
+      var allfields = match();
+      for (i = 0 ; allfields.length ; i++) {
+        eraseOne(allfields[i]);
+      }
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <button type="button" name="button">RAZ</button>
+  </form>
+</body>
+</html>
